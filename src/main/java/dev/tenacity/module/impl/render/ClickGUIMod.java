@@ -5,7 +5,6 @@ import dev.tenacity.module.Module;
 import dev.tenacity.module.settings.impl.BooleanSetting;
 import dev.tenacity.module.settings.impl.ModeSetting;
 import dev.tenacity.module.settings.impl.NumberSetting;
-import dev.tenacity.ui.clickguis.compact.CompactClickgui;
 import dev.tenacity.ui.clickguis.dropdown.DropdownClickGUI;
 import dev.tenacity.ui.clickguis.modern.ModernClickGui;
 import dev.tenacity.utils.render.Theme;
@@ -13,7 +12,7 @@ import org.lwjgl.input.Keyboard;
 
 public class ClickGUIMod extends Module {
 
-    public static final ModeSetting clickguiMode = new ModeSetting("ClickGui", "Dropdown", "Dropdown", "Modern", "Compact","Skeet");
+    public static final ModeSetting clickguiMode = new ModeSetting("ClickGui", "Dropdown", "Dropdown", "Modern","Skeet");
     public static final ModeSetting scrollMode = new ModeSetting("Scroll Mode", "Screen Height", "Screen Height", "Value");
     public static final BooleanSetting gradient = new BooleanSetting("Gradient", false);
     public static final BooleanSetting outlineAccent = new BooleanSetting("Outline Accent", true);
@@ -24,7 +23,6 @@ public class ClickGUIMod extends Module {
 
     public static final DropdownClickGUI dropdownClickGui = new DropdownClickGUI();
     public static final ModernClickGui modernClickGui = new ModernClickGui();
-    public static final CompactClickgui compactClickgui = new CompactClickgui();
 
     private int activeCategory = 0;
     private Category activeCategory2 = Category.COMBAT;
@@ -60,9 +58,7 @@ public class ClickGUIMod extends Module {
             case "Modern":
                 mc.displayGuiScreen(modernClickGui);
                 break;
-            case "Compact":
-                mc.displayGuiScreen(compactClickgui);
-                break;
+
         }
     }
 

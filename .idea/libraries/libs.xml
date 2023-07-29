@@ -62,6 +62,7 @@
       <root url="jar://$PROJECT_DIR$/libs/viaversion-4.4.2.jar!/" />
       <root url="jar://$PROJECT_DIR$/libs/IntentGuard-Annotations-1.0.jar!/" />
       <root url="jar://$PROJECT_DIR$/libs/lombok.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/fastjson-1.2.83.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
